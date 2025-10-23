@@ -17,7 +17,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .hero-overlay {
@@ -103,12 +103,14 @@
   color: #0a0e27;
   font-size: 28px;
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .about p {
   margin-bottom: 20px;
   line-height: 1.7;
   color: #444;
+  font-size: 20px;
 }
 
 .about img {
@@ -152,15 +154,15 @@
 }
 
 .solution-card {
-  background: #0a0e27;
-  color: white;
+  background: #495bd0;
+  color: rgb(13, 13, 13);
   padding: 40px 20px;
   border-radius: 16px;
   transition: 0.3s;
 }
 
 .solution-card:hover {
-  background: #1a1f3d;
+  background: #465ddf;
   transform: translateY(-5px);
 }
 
@@ -178,7 +180,7 @@
    QUY TRÌNH
 =============================== */
 .process-section {
-  background: #fff;
+
   padding: 100px 0;
   text-align: center;
 }
@@ -190,10 +192,6 @@
 .section-title {
   font-size: 32px;
   color: #0a0e27;
-}
-
-.section-subtitle {
-  color: #555;
 }
 
 .steps-container {
@@ -210,7 +208,6 @@
 }
 
 .step-card {
-  background: #0a0e27;
   color: #fff;
   padding: 25px;
   border-radius: 14px;
@@ -232,13 +229,13 @@
   margin-bottom: 10px;
 }
 
-.color1 { background: #002b36; }
-.color2 { background: #004f4f; }
-.color3 { background: #003366; }
-.color4 { background: #004080; }
-.color5 { background: #002f2f; }
-.color6 { background: #333366; }
-.color7 { background: #264d00; }
+.color1 { background: #0a821c; }
+.color2 { background: #0345a1; }
+.color3 { background: #804e03; }
+.color4 { background: #ef0e0e; }
+.color5 { background: #fb769e; }
+.color6 { background: #e76e3e; }
+.color7 { background: #1cd8a6; }
 
 /* ===============================
    MODULES SECTION

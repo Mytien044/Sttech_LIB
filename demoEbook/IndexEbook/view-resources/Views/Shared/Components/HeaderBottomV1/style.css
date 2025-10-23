@@ -476,7 +476,7 @@ section {
 }
 
 #quy-trinh p {
-  color: #555;
+  color: #0a0000;
   margin-bottom: 40px;
   font-style: italic;
 }
@@ -1267,10 +1267,9 @@ section {
 }
 img {
   object-fit: contain;
-  height: 100%;
 }
 nav {
-  background-color: var(--primary-color);
+  background-color: #389740;
   padding: 10px 0;
 }
 
