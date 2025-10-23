@@ -124,444 +124,150 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<main>
- <!-- HERO SECTION - ST TECH STYLE -->
-<section id="gioi-thieu" class="relative flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-b from-[#0a0f1c] to-[#0d121f] text-white overflow-hidden px-6">
-  
-  <div class="max-w-4xl mx-auto z-10">
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-      ST TECH - Sáng tạo vì <br class="hidden md:block" /> Tương lai số
-    </h1>
+ <main>
+        <section id="gioi-thieu" class="hero-section">
+            <div id="threejs-container"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">STTECH - Sáng tạo vì Tương lai số</h1>
+                <p class="hero-subtitle">“Công nghệ không chỉ thay đổi thế giới, mà còn mở ra con đường dẫn tới tri thức và tương lai.”</p>
+                <div class="hero-buttons">
+                    <a href="#phan-he" class="btn btn-gradient">Khám phá giải pháp</a>
+                    <a href="#nguoi-dung" class="btn btn-outline">Về chúng tôi</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
 
-    <p class="text-lg md:text-xl italic text-gray-300 mb-10">
-      “Công nghệ không chỉ thay đổi thế giới, mà còn mở ra con đường dẫn tới tri thức và tương lai.”
-    </p>
-
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="#solutions" 
-         class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-transform transform hover:scale-105">
-        Khám phá giải pháp
-      </a>
-      <a href="#about" 
-         class="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-700 transition-transform transform hover:scale-105">
-        Về chúng tôi
-      </a>
+ <section class="about">
+    <div class="container">
+      <div class="about-left">
+        <h2>Chúng tôi là ai</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae eros non lorem malesuada iaculis.</p>
+        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="Team">
+      </div>
+      <div class="about-right">
+        <h2>Lợi ích của Thư viện số</h2>
+        <div class="benefits">
+          <div class="benefit"><span>⏰</span><p>Truy cập 24/7</p></div>
+          <div class="benefit"><span>🌐</span><p>Mọi lúc, Mọi nơi</p></div>
+          <div class="benefit"><span>🛡️</span><p>Bảo mật & Bảo tồn</p></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Optional background video -->
-  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-10">
-    <source src="/demoEbook/IndexEbook/Designs/video/sttech.mp4" type="video/mp4">
-  </video>
-
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-</section>
-
-    <section id="problem-solution" class="split-section">
-        <div class="container" bis_skin_checked="1">
-            <div class="text-col" bis_skin_checked="1">
-                <div class="section-header" bis_skin_checked="1">
-                    <h2 class="section-title">Giải thích vấn đề – giải pháp</h2>
-                    <p class="section-subtitle">
-                        Hiểu rõ những khó khăn hiện tại và giải pháp chúng tôi mang lại
-                    </p>
+  <section class="solutions">
+    <h2>Giải pháp của Thư viện số</h2>
+    <div class="solution-grid">
+      <div class="solution-card">
+        <h3>Phần mềm Quản lý</h3>
+        <a href="#" class="btn-card">Xem chi tiết</a>
+      </div>
+      <div class="solution-card">
+        <h3>Số hóa Tài liệu</h3>
+        <a href="#" class="btn-card">Xem chi tiết</a>
+      </div>
+      <div class="solution-card">
+        <h3>Tích hợp Hệ thống</h3>
+        <a href="#" class="btn-card">Xem chi tiết</a>
+      </div>
+    </div>
+        
+        <section id="quy-trinh" class="process-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Quy trình sử dụng</h2>
+                    <p class="section-subtitle">7 bước triển khai & vận hành hệ thống Thư viện số.</p>
                 </div>
-                <div class="problem-solution" bis_skin_checked="1">
-                    <div class="problem-card" bis_skin_checked="1">
-                        <div class="card-header" bis_skin_checked="1">
-                            <i class="fa-solid fa-triangle-exclamation"></i>
-                            <h3 class="card-title">Khó khăn hiện nay</h3>
-                        </div>
-                        <p class="card-content">
-                            Quản lý tài liệu truyền thống phân tán, tốn thời gian, khó tra
-                            cứu, số liệu báo cáo không đồng bộ và khó đánh giá chuẩn thư
-                            viện.
-                        </p>
+                <div class="steps-container">
+                    <div class="steps-row">
+                        <div class="step-card color1"><div class="icon">⚙️</div><div class="number">Bước 1</div><h3>Khởi tạo</h3><p>Nhận hệ thống, cấu hình ban đầu, phân quyền.</p></div>
+                        <div class="step-card color2"><div class="icon">📚</div><div class="number">Bước 2</div><h3>Quản lý tài nguyên</h3><p>Nhập sách in, liên thông dữ liệu.</p></div>
+                        <div class="step-card color3"><div class="icon">💻</div><div class="number">Bước 3</div><h3>Tạo sách số</h3><p>Số hóa tài liệu, tạo ebook, xuất bản.</p></div>
+                        <div class="step-card color4"><div class="icon">👥</div><div class="number">Bước 4</div><h3>Quản lý dịch vụ</h3><p>Cấp tài khoản, mượn–trả, tra cứu.</p></div>
                     </div>
-                    <div class="solution-card" bis_skin_checked="1">
-                        <div class="card-header" bis_skin_checked="1">
-                            <i class="fa-solid fa-lightbulb"></i>
-                            <h3 class="card-title">Giải pháp số hóa</h3>
-                        </div>
-                        <p class="card-content">
-                            Nền tảng thư viện trực tuyến hợp nhất: số hóa tài liệu, tra
-                            cứu nhanh, quy trình mượn/ trả tự động, báo cáo – thống kê
-                            theo chuẩn, tích hợp thư viện số EBOOK.
-                        </p>
+                    <div class="steps-row bottom-row">
+                        <div class="step-card color5"><div class="icon">📈</div><div class="number">Bước 5</div><h3>Báo cáo</h3><p>Số liệu nội bộ, biểu mẫu cấp trên.</p></div>
+                        <div class="step-card color6"><div class="icon">✅</div><div class="number">Bước 6</div><h3>Đánh giá chuẩn</h3><p>Tích hợp tiêu chí, tự động chấm điểm.</p></div>
+                        <div class="step-card color7"><div class="icon">🚀</div><div class="number">Bước 7</div><h3>Phát triển mở rộng</h3><p>Phân tích dữ liệu, kết nối hệ sinh thái.</p></div>
                     </div>
                 </div>
             </div>
-            <div class="media-col" bis_skin_checked="1">
-                <div class="split-media" style="aspect-ratio: 4/3" bis_skin_checked="1">
-                    <img src="/demoEbook/IndexEbook/Designs/Images/suy.jpg" alt="Thư viện cũ">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="loi-ich" class="split-section reverse">
-        <div class="container" bis_skin_checked="1">
-            <div class="text-col" bis_skin_checked="1">
-                <div class="section-header" bis_skin_checked="1">
-                    <h2 class="section-title">Lợi ích nổi bật</h2>
-                    <p class="section-subtitle">
-                        Những giá trị mà hệ thống mang lại cho tổ chức của bạn
-                    </p>
+        <section id="phan-he" class="modules-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">3 phân hệ chính</h2>
+                    <p class="section-subtitle">Hệ thống toàn diện đáp ứng mọi nhu cầu quản lý thư viện.</p>
                 </div>
-                <div class="benefits-grid" bis_skin_checked="1">
-                    <div class="benefit-card" bis_skin_checked="1">
-                        <div class="benefit-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                        </div>
-                        <h3 class="benefit-title">Tiết kiệm thời gian</h3>
-                        <p class="benefit-description">
-                            Tự động hóa nghiệp vụ, <br>
-                            tìm kiếm tức thì, giảm thao tác thủ công.
-                        </p>
-                    </div>
-                    <div class="benefit-card" bis_skin_checked="1">
-                        <div class="benefit-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                        </div>
-                        <h3 class="benefit-title">Truy cập đa nền tảng</h3>
-                        <p class="benefit-description">
-                            Sử dụng trên máy tính, <br>
-                            máy tính bảng, điện thoại <br>
-                            mọi lúc mọi nơi.
-                        </p>
-                    </div>
-                    <div class="benefit-card" bis_skin_checked="1">
-                        <div class="benefit-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-                        <h3 class="benefit-title">Quản lý tập trung</h3>
-                        <p class="benefit-description">
-                            Dữ liệu thống nhất, <br>
-                            phân quyền rõ ràng, an toàn và bảo mật.
-                        </p>
-                    </div>
-                    <div class="benefit-card" bis_skin_checked="1">
-                        <div class="benefit-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                        </div>
-                        <h3 class="benefit-title">Hỗ trợ giáo dục</h3>
-                        <p class="benefit-description">
-                            Kho tri thức số EBOOK <br>
-                            phục vụ học tập và <br>
-                            nghiên cứu liên tục.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="media-col" bis_skin_checked="1">
-                <div class="split-media" style="aspect-ratio: 4/3" bis_skin_checked="1">
-                    <img src="/demoEbook/IndexEbook/Designs/Images/COGIAO.jpg" alt="Minh họa lợi ích hệ thống">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="quy-trinh">
-        <h2>Quy trình sử dụng</h2>
-        <p>7 bước triển khai &amp; vận hành hệ thống Thư viện số</p>
-
-        <div class="steps" bis_skin_checked="1">
-            <!-- Hàng trên: 4 bước -->
-            <div class="row top" bis_skin_checked="1">
-                <div class="step color1" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">⚙️</div>
-                    <div class="number" bis_skin_checked="1">Bước 1</div>
-                    <h3>Khởi tạo</h3>
-                    <p>
-                        Nhận hệ thống <br>
-                        → Cấu hình ban đầu <br>→ Phân quyền
-                    </p>
-                </div>
-                <div class="step color2" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">📚</div>
-                    <div class="number" bis_skin_checked="1">Bước 2</div>
-                    <h3>Quản lý tài nguyên</h3>
-                    <p>
-                        Nhập sách in <br>
-                        → Liên thông dữ liệu
-                    </p>
-                </div>
-                <div class="step color3" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">💻</div>
-                    <div class="number" bis_skin_checked="1">Bước 3</div>
-                    <h3>Tạo &amp; Khai thác sách số</h3>
-                    <p>
-                        Số hóa tài liệu <br>
-                        →Tạo ebook/bài giảng số <br>→ Xuất bản
-                    </p>
-                </div>
-                <div class="step color4" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">👥</div>
-                    <div class="number" bis_skin_checked="1">Bước 4</div>
-                    <h3>Quản lý người dùng &amp; dịch vụ</h3>
-                    <p>
-                        Cấp tài khoản <br>
-                        → Mượn – trả → Tra cứu → Thống kê
-                    </p>
-                </div>
-            </div>
-
-            <!-- Hàng dưới: 3 bước xen giữa -->
-            <div class="row bottom" bis_skin_checked="1">
-                <div class="step color5" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">📈</div>
-                    <div class="number" bis_skin_checked="1">Bước 5</div>
-                    <h3>Báo cáo</h3>
-                    <p>Số liệu nội bộ <br>→ Biểu mẫu cấp trên</p>
-                </div>
-                <div class="step color6" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">✅</div>
-                    <div class="number" bis_skin_checked="1">Bước 6</div>
-                    <h3>Đánh giá chuẩn</h3>
-                    <p>
-                        Tích hợp tiêu chí <br>
-                        → Tự động chấm điểm <br>→ Gợi ý cải tiến
-                    </p>
-                </div>
-                <div class="step color7" bis_skin_checked="1">
-                    <div class="icon" bis_skin_checked="1">🚀</div>
-                    <div class="number" bis_skin_checked="1">Bước 7</div>
-                    <h3>Phát triển mở rộng</h3>
-                    <p>
-                        Phân tích dữ liệu <br>→ Kết nối hệ sinh thái <br>
-                        → Nâng cấp dịch vụ
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="phan-he">
-        <div class="container" bis_skin_checked="1">
-            <div class="section-header" bis_skin_checked="1">
-                <h2 class="section-title">3 phân hệ chính</h2>
-                <p class="section-subtitle">
-                    Hệ thống toàn diện đáp ứng mọi nhu cầu quản lý thư viện
-                </p>
-            </div>
-            <div class="modules-grid" bis_skin_checked="1">
-                <div class="module-card module-school" bis_skin_checked="1">
-                    <div class="module-image" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/QLTVTT.jpg" alt="Quản lý thư viện trường học">
-                        <div class="module-overlay" bis_skin_checked="1"></div>
-                    </div>
-                    <div class="module-content" bis_skin_checked="1">
-                        <div class="module-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-school"></i>
-                        </div>
-                        <h3 class="module-title">
-                            Quản lý thư viện trường học trực tuyến
-                        </h3>
-                        <p class="module-description">
-                            Nghiệp vụ thư viện học đường: bạn đọc, kho sách, mượn trả,
-                            thống kê.
-                        </p>
-                        <div class="module-features" bis_skin_checked="1">
-                            <span class="feature-tag">Quản lý bạn đọc</span>
-                            <span class="feature-tag">Mượn trả tự động</span>
-                            <span class="feature-tag">Báo cáo thống kê</span>
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="module-image"><img src="https://images.unsplash.com/photo-1544716278-ca5e3f4582e8?q=80&w=1974" alt="Quản lý thư viện"></div>
+                        <div class="module-content">
+                            <div class="module-icon"><i class="fa-solid fa-school"></i></div>
+                            <h3 class="module-title">Quản lý thư viện trường học</h3>
+                            <p>Nghiệp vụ thư viện học đường: bạn đọc, kho sách, mượn trả, thống kê.</p>
+                            <div class="module-tags"><span class="tag">Bạn đọc</span><span class="tag">Mượn trả</span><span class="tag">Báo cáo</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="module-card module-ebook" bis_skin_checked="1">
-                    <div class="module-image" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/EBOOK.jpg" alt="Thư viện số EBOOK">
-                        <div class="module-overlay" bis_skin_checked="1"></div>
-                    </div>
-                    <div class="module-content" bis_skin_checked="1">
-                        <div class="module-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                        </div>
-                        <h3 class="module-title">Thư viện số EBOOK</h3>
-                        <p class="module-description">
-                            Kho tài nguyên số theo chuẩn, đọc trực tuyến, phân quyền truy
-                            cập.
-                        </p>
-                        <div class="module-features" bis_skin_checked="1">
-                            <span class="feature-tag">Đọc trực tuyến</span>
-                            <span class="feature-tag">Phân quyền truy cập</span>
-                            <span class="feature-tag">Tài nguyên số</span>
+                    <div class="module-card">
+                        <div class="module-image"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1887" alt="EBOOK"></div>
+                        <div class="module-content">
+                            <div class="module-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                            <h3 class="module-title">Thư viện số EBOOK</h3>
+                            <p>Kho tài nguyên số theo chuẩn, đọc trực tuyến, phân quyền truy cập.</p>
+                            <div class="module-tags"><span class="tag">Đọc Online</span><span class="tag">Phân quyền</span><span class="tag">Tài nguyên số</span></div>
                         </div>
                     </div>
-                </div>
-                <div class="module-card module-standard" bis_skin_checked="1">
-                    <div class="module-image" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/TVDC.jpg" alt="Thư viện đạt chuẩn">
-                        <div class="module-overlay" bis_skin_checked="1"></div>
-                    </div>
-                    <div class="module-content" bis_skin_checked="1">
-                        <div class="module-icon" bis_skin_checked="1">
-                            <i class="fa-solid fa-award"></i>
-                        </div>
-                        <h3 class="module-title">Thư viện đạt chuẩn</h3>
-                        <p class="module-description">
-                            Bộ tiêu chí – minh chứng – báo cáo hỗ trợ đánh giá, xếp hạng.
-                        </p>
-                        <div class="module-features" bis_skin_checked="1">
-                            <span class="feature-tag">Tiêu chí đánh giá</span>
-                            <span class="feature-tag">Minh chứng</span>
-                            <span class="feature-tag">Báo cáo xếp hạng</span>
+                    <div class="module-card">
+                        <div class="module-image"><img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?q=80&w=2071" alt="Thư viện đạt chuẩn"></div>
+                        <div class="module-content">
+                            <div class="module-icon"><i class="fa-solid fa-award"></i></div>
+                            <h3 class="module-title">Thư viện đạt chuẩn</h3>
+                            <p>Bộ tiêu chí – minh chứng – báo cáo hỗ trợ đánh giá, xếp hạng.</p>
+                            <div class="module-tags"><span class="tag">Tiêu chí</span><span class="tag">Minh chứng</span><span class="tag">Xếp hạng</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="nguoi-dung">
-        <div class="container" bis_skin_checked="1">
-            <div class="section-header" bis_skin_checked="1">
-                <h2 class="section-title">Lợi ích theo nhóm người dùng</h2>
-                <p class="section-subtitle">
-                    Mỗi đối tượng đều nhận được giá trị riêng từ hệ thống
-                </p>
-            </div>
-            <div class="users-grid" bis_skin_checked="1">
-                <div class="user-card user-education" bis_skin_checked="1">
-                    <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/CTXH.png" alt="Phòng giáo dục" class="img-ph">
-                        <div class="user-badge" bis_skin_checked="1">
-                            <i class="fa-solid fa-building-columns"></i>
-                        </div>
-                    </div>
-                    <div class="user-content" bis_skin_checked="1">
-                        <h3 class="user-title">Sở GD&amp;ĐT, <br>Phòng VH-XH</h3>
-                        <p class="user-description">
-                            Quản lý tập trung, tổng hợp báo cáo liên trường, <br>
-                            theo dõi chất lượng.
-                        </p>
-                        <div class="user-benefits" bis_skin_checked="1">
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-chart-line"></i>
-                                <span>Báo cáo tổng hợp</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-eye"></i>
-                                <span>Theo dõi chất lượng</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-network-wired"></i>
-                                <span>Quản lý tập trung</span>
-                            </div>
-                        </div>
-                    </div>
+        <section id="nguoi-dung" class="users-section">
+            <div class="container">
+                 <div class="section-header">
+                    <h2 class="section-title">Lợi ích theo nhóm người dùng</h2>
+                    <p class="section-subtitle">Mỗi đối tượng đều nhận được giá trị riêng từ hệ thống.</p>
                 </div>
-
-                <div class="user-card user-principal" bis_skin_checked="1">
-                    <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images//HT.png" alt="Hiệu trưởng" class="img-ph">
-                        <div class="user-badge" bis_skin_checked="1">
-                            <i class="fa-solid fa-user-tie"></i>
-                        </div>
+                <div class="users-grid">
+                    <div class="user-card">
+                        <div class="user-avatar"><img src="https://i.ibb.co/6y405wP/user1.png" alt="Sở GD&ĐT"><div class="user-badge"><i class="fa-solid fa-building-columns"></i></div></div>
+                        <div class="user-info"><h3>Sở/Phòng GD</h3><p>Quản lý tập trung, tổng hợp báo cáo liên trường, theo dõi chất lượng.</p></div>
                     </div>
-                    <div class="user-content" bis_skin_checked="1">
-                        <h3 class="user-title">Hiệu trưởng</h3>
-                        <p class="user-description">
-                            Nắm bắt nhanh tình hình <br>thư viện, ra quyết định
-                            <br>dựa trên dữ liệu.
-                        </p>
-                        <div class="user-benefits" bis_skin_checked="1">
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-dashboard"></i>
-                                <span>Dashboard tổng quan</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-lightbulb"></i>
-                                <span>Ra quyết định thông minh</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-trending-up"></i>
-                                <span>Phân tích xu hướng</span>
-                            </div>
-                        </div>
+                    <div class="user-card">
+                        <div class="user-avatar"><img src="https://i.ibb.co/VMy7Kx8/user2.png" alt="Hiệu trưởng"><div class="user-badge"><i class="fa-solid fa-user-tie"></i></div></div>
+                        <div class="user-info"><h3>Hiệu trưởng</h3><p>Nắm bắt tình hình, ra quyết định dựa trên dữ liệu, phân tích xu hướng.</p></div>
                     </div>
-                </div>
-
-                <div class="user-card user-teacher" bis_skin_checked="1">
-                    <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/giaovien.png" alt="Giáo viên/Thủ thư" class="img-ph">
-                        <div class="user-badge" bis_skin_checked="1">
-                            <i class="fa-solid fa-user-gear"></i>
-                        </div>
+                    <div class="user-card">
+                        <div class="user-avatar"><img src="https://i.ibb.co/tZ5wQ3S/user3.png" alt="Giáo viên"><div class="user-badge"><i class="fa-solid fa-user-gear"></i></div></div>
+                        <div class="user-info"><h3>Giáo viên/Thủ thư</h3><p>Giảm việc thủ công, xử lý nhanh mượn/trả, biên mục hiệu quả.</p></div>
                     </div>
-                    <div class="user-content" bis_skin_checked="1">
-                        <h3 class="user-title">Giáo viên/Thủ thư</h3>
-                        <p class="user-description">
-                            Giảm việc thủ công, <br>
-                            xử lý nhanh mượn/trả, <br>
-                            bổ sung – biên mục.
-                        </p>
-                        <div class="user-benefits" bis_skin_checked="1">
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-robot"></i>
-                                <span>Tự động hóa nghiệp vụ</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-clock"></i>
-                                <span>Tiết kiệm thời gian</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-tools"></i>
-                                <span>Công cụ quản lý</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="user-card user-student" bis_skin_checked="1">
-                    <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/demoEbook/IndexEbook/Designs/Images/Hocsinh.png" alt="Học sinh" class="img-ph">
-                        <div class="user-badge" bis_skin_checked="1">
-                            <i class="fa-solid fa-user-graduate"></i>
-                        </div>
-                    </div>
-                    <div class="user-content" bis_skin_checked="1">
-                        <h3 class="user-title">Học sinh/ Bạn đọc</h3>
-                        <p class="user-description">
-                            Tra cứu tiện lợi, <br>
-                            tiếp cận EBOOK, <br>hình thành thói quen đọc.
-                        </p>
-                        <div class="user-benefits" bis_skin_checked="1">
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-search"></i>
-                                <span>Tra cứu dễ dàng</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-book-open"></i>
-                                <span>Đọc sách trực tuyến</span>
-                            </div>
-                            <div class="benefit-item" bis_skin_checked="1">
-                                <i class="fa-solid fa-heart"></i>
-                                <span>Yêu thích đọc sách</span>
-                            </div>
-                        </div>
+                    <div class="user-card">
+                        <div class="user-avatar"><img src="https://i.ibb.co/fnyxNn3/user4.png" alt="Học sinh"><div class="user-badge"><i class="fa-solid fa-user-graduate"></i></div></div>
+                        <div class="user-info"><h3>Học sinh/Bạn đọc</h3><p>Tra cứu tiện lợi, tiếp cận EBOOK, hình thành thói quen đọc sách.</p></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section ebook -->
-    <section class="ebook-section"></section>
-    <section class="cta-section">
-        <div class="container" bis_skin_checked="1">
-            <h2 class="cta-title">Sẵn sàng trải nghiệm?</h2>
-            <p class="cta-description">
-                Đăng nhập ngay để khám phá toàn bộ tính năng của hệ thống quản lý
-                thư viện hiện đại
-            </p>
-            <a class="btn btn-white" href="/demoEbook/loginebook/account/login.html">
-                <i class="#"></i> Đăng nhập ngay
-            </a>
-        </div>
-    </section>
-</main>
+        </section>
+
+        <section id="lien-he" class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Sẵn sàng nâng tầm thư viện của bạn?</h2>
+                <p class="cta-subtitle">Liên hệ ngay để nhận tư vấn và bản dùng thử miễn phí từ ST Tech.</p>
+                <a href="#" class="btn btn-light">Đăng ký tư vấn</a>
+            </div>
+        </section>
+    </main>
 <!--footer-->
 <div id="footer"></div>
 <script>
