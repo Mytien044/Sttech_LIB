@@ -20,13 +20,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content=" http://demolib.sttech.vn/chi-tiet-bai-viet/1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/IndexEbook/Ebook/css/plugins.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="/IndexEbook/Ebook/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/IndexEbook/3rds/3d-flipbook/css/flipbook.style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/Designs/Images/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="/demoEbook/IndexEbook/Ebook/css/plugins.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/demoEbook/IndexEbook/Ebook/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/demoEbook/IndexEbook/3rds/3d-flipbook/css/flipbook.style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/demoEbook/Designs/Images/favicon.ico">
     
     
-                <link rel="stylesheet" href="/IndexEbook/view-resources/Views/Shared/Components/DetailPostV1/style.css">
+                <link rel="stylesheet" href="/demoEbook/IndexEbook/view-resources/Views/Shared/Components/DetailPostV1/style.css">
                 
 
     <script type="text/javascript">
@@ -38,14 +38,14 @@
     
 
 <!--HeaderContact-->
-<div id="header-contact"></div>
+<div id="header-bottom"></div>
 <script>
-  fetch('../3rds/3d-flipbook/components/HeaderContact.html')
+  fetch('../3rds/3d-flipbook/components/HeaderBottom.html')
     .then(response => response.text())
     .then(data => {
-      document.getElementById('header-contact').innerHTML = data;
+      document.getElementById('header-bottom').innerHTML = data;
     })
-    .catch(error => console.error('Lỗi khi tải HeaderContact:', error));
+    .catch(error => console.error('Lỗi khi tải HeaderBottom:', error));
 </script>
 <!--HeaderMobile-->
 <header class="mobile-header d-block d-lg-none pt--10 pb-md--10">
@@ -53,7 +53,7 @@
         <div class="row align-items-sm-end align-items-center" bis_skin_checked="1">
             <div class="col-md-4 col-7" bis_skin_checked="1">
                 <a href="/" class="site-brand">
-                    <img src="/IndexEbook/Designs/Images/logo-menu.png" alt="">
+                    <img src="/demoEbook/IndexEbook/Designs/Images/logo-menu.png" alt="">
                 </a>
             </div>
            
@@ -125,41 +125,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <main>
-    <section class="hero" id="gioi-thieu">
-        <div class="container" bis_skin_checked="1">
-            <div class="hero-content" bis_skin_checked="1">
-                <div class="eyebrow" bis_skin_checked="1">
-                    <i class="fa-solid fa-sparkles"></i> Trải nghiệm mới 2025
-                </div>
-                <h1>
-                    <span class="gradient-text">
-                        Phần mềm quản lý <br>
-                        thư viện trực tuyến
-                    </span>
-                   Dành riêng cho trường học tại Việt Nam
-                </h1>
-                <p>
-                    STTECH EBOOK - Nền tảng thư viện số hàng đầu <br>
-                    Việt Nam, giải pháp công nghệ kết nối sức mạnh <br>
-                    giáo viên, kiến tạo kho tri thức Việt.
-                </p>
-                <div class="hero-actions" bis_skin_checked="1">
-                    <a class="btn btn-primary" href="/loginebook/account/login.html">
-                        <i class="#"> </i> Bắt đầu sử
-                        dụng
-                    </a>
-                    <a class="btn btn-secondary" href="#loi-ich">
-                        <i class="fa-solid fa-circle-info"></i> Xem lợi ích
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual" bis_skin_checked="1">
-                <video autoplay="" muted="" loop="" playsinline="">
-                    <source src="/IndexEbook/Designs/Images/introST.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
+ <!-- HERO SECTION - ST TECH STYLE -->
+<section id="gioi-thieu" class="relative flex flex-col items-center justify-center text-center min-h-screen bg-gradient-to-b from-[#0a0f1c] to-[#0d121f] text-white overflow-hidden px-6">
+  
+  <div class="max-w-4xl mx-auto z-10">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+      ST TECH - Sáng tạo vì <br class="hidden md:block" /> Tương lai số
+    </h1>
+
+    <p class="text-lg md:text-xl italic text-gray-300 mb-10">
+      “Công nghệ không chỉ thay đổi thế giới, mà còn mở ra con đường dẫn tới tri thức và tương lai.”
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#solutions" 
+         class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:opacity-90 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-transform transform hover:scale-105">
+        Khám phá giải pháp
+      </a>
+      <a href="#about" 
+         class="border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-700 transition-transform transform hover:scale-105">
+        Về chúng tôi
+      </a>
+    </div>
+  </div>
+
+  <!-- Optional background video -->
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-10">
+    <source src="/demoEbook/IndexEbook/Designs/video/sttech.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+</section>
 
     <section id="problem-solution" class="split-section">
         <div class="container" bis_skin_checked="1">
@@ -197,7 +194,7 @@
             </div>
             <div class="media-col" bis_skin_checked="1">
                 <div class="split-media" style="aspect-ratio: 4/3" bis_skin_checked="1">
-                    <img src="/IndexEbook/Designs/Images/suy.jpg" alt="Thư viện cũ">
+                    <img src="/demoEbook/IndexEbook/Designs/Images/suy.jpg" alt="Thư viện cũ">
                 </div>
             </div>
         </div>
@@ -260,7 +257,7 @@
             </div>
             <div class="media-col" bis_skin_checked="1">
                 <div class="split-media" style="aspect-ratio: 4/3" bis_skin_checked="1">
-                    <img src="/IndexEbook/Designs/Images/COGIAO.jpg" alt="Minh họa lợi ích hệ thống">
+                    <img src="/demoEbook/IndexEbook/Designs/Images/COGIAO.jpg" alt="Minh họa lợi ích hệ thống">
                 </div>
             </div>
         </div>
@@ -352,7 +349,7 @@
             <div class="modules-grid" bis_skin_checked="1">
                 <div class="module-card module-school" bis_skin_checked="1">
                     <div class="module-image" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/QLTVTT.jpg" alt="Quản lý thư viện trường học">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/QLTVTT.jpg" alt="Quản lý thư viện trường học">
                         <div class="module-overlay" bis_skin_checked="1"></div>
                     </div>
                     <div class="module-content" bis_skin_checked="1">
@@ -375,7 +372,7 @@
                 </div>
                 <div class="module-card module-ebook" bis_skin_checked="1">
                     <div class="module-image" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/EBOOK.jpg" alt="Thư viện số EBOOK">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/EBOOK.jpg" alt="Thư viện số EBOOK">
                         <div class="module-overlay" bis_skin_checked="1"></div>
                     </div>
                     <div class="module-content" bis_skin_checked="1">
@@ -396,7 +393,7 @@
                 </div>
                 <div class="module-card module-standard" bis_skin_checked="1">
                     <div class="module-image" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/TVDC.jpg" alt="Thư viện đạt chuẩn">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/TVDC.jpg" alt="Thư viện đạt chuẩn">
                         <div class="module-overlay" bis_skin_checked="1"></div>
                     </div>
                     <div class="module-content" bis_skin_checked="1">
@@ -429,7 +426,7 @@
             <div class="users-grid" bis_skin_checked="1">
                 <div class="user-card user-education" bis_skin_checked="1">
                     <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/CTXH.png" alt="Phòng giáo dục" class="img-ph">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/CTXH.png" alt="Phòng giáo dục" class="img-ph">
                         <div class="user-badge" bis_skin_checked="1">
                             <i class="fa-solid fa-building-columns"></i>
                         </div>
@@ -459,7 +456,7 @@
 
                 <div class="user-card user-principal" bis_skin_checked="1">
                     <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images//HT.png" alt="Hiệu trưởng" class="img-ph">
+                        <img src="/demoEbook/IndexEbook/Designs/Images//HT.png" alt="Hiệu trưởng" class="img-ph">
                         <div class="user-badge" bis_skin_checked="1">
                             <i class="fa-solid fa-user-tie"></i>
                         </div>
@@ -489,7 +486,7 @@
 
                 <div class="user-card user-teacher" bis_skin_checked="1">
                     <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/giaovien.png" alt="Giáo viên/Thủ thư" class="img-ph">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/giaovien.png" alt="Giáo viên/Thủ thư" class="img-ph">
                         <div class="user-badge" bis_skin_checked="1">
                             <i class="fa-solid fa-user-gear"></i>
                         </div>
@@ -520,7 +517,7 @@
 
                 <div class="user-card user-student" bis_skin_checked="1">
                     <div class="user-avatar" bis_skin_checked="1">
-                        <img src="/IndexEbook/Designs/Images/Hocsinh.png" alt="Học sinh" class="img-ph">
+                        <img src="/demoEbook/IndexEbook/Designs/Images/Hocsinh.png" alt="Học sinh" class="img-ph">
                         <div class="user-badge" bis_skin_checked="1">
                             <i class="fa-solid fa-user-graduate"></i>
                         </div>
@@ -559,7 +556,7 @@
                 Đăng nhập ngay để khám phá toàn bộ tính năng của hệ thống quản lý
                 thư viện hiện đại
             </p>
-            <a class="btn btn-white" href="/loginebook/account/login.html">
+            <a class="btn btn-white" href="/demoEbook/loginebook/account/login.html">
                 <i class="#"></i> Đăng nhập ngay
             </a>
         </div>
@@ -577,23 +574,23 @@
 </script>
 
 </div>
-<script src="/IndexEbook/view-resources/Views/_Bundles/frontend-libs.min.js"></script>
+<script src="/demoEbook/IndexEbook/view-resources/Views/_Bundles/frontend-libs.min.js"></script>
 <script src="/AbpServiceProxies/GetAll?v=638966551497300744" type="text/javascript"></script>
 <script src="/AbpScripts/GetScripts?v=638966551497300744" type="text/javascript"></script>
-<script abp-src="/IndexEbook/view-resources/Views/_Bundles/common-scripts.js"></script>
+<script abp-src="/demoEbook/IndexEbook/view-resources/Views/_Bundles/common-scripts.js"></script>
 <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
 <script src="/AbpScripts/GetScripts?_v=638966551497300744" type="text/javascript"></script>
 
-<script src="/IndexEbook/3rds/3d-flipbook/js/flipbook.min.js" type="text/javascript"></script>
+<script src="/demoEbook/IndexEbook/3rds/3d-flipbook/js/flipbook.min.js" type="text/javascript"></script>
 
 
-                <script src="/IndexEbook/view-resources/Views/Shared/Components/HeaderBottomV1/Default.js"></script>
+                <script src="/demoEbook/IndexEbook/view-resources/Views/Shared/Components/HeaderBottomV1/Default.js"></script>
 
 
-<script src="/IndexEbook/Ebook/js/plugins.js"></script>
-<script src="/IndexEbook/Ebook/js/ajax-mail.js"></script>
-<script src="/IndexEbook/Ebook/js/custom.js"></script>
-<script src="/IndexEbook/Ebook/js/main.js"></script>
+<script src="/demoEbook/IndexEbook/Ebook/js/plugins.js"></script>
+<script src="/demoEbook/IndexEbook/Ebook/js/ajax-mail.js"></script>
+<script src="/demoEbook/IndexEbook/Ebook/js/custom.js"></script>
+<script src="/demoEbook/IndexEbook/Ebook/js/main.js"></script>
 
 <script>
     // app.supportsTenancyNameInUrl = false;
