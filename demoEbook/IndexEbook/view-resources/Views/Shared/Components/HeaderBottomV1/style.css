@@ -5,14 +5,14 @@
 }
 
 :root {
-  --primary-color: #1a5276;
+  --primary-color: #099e06;
 
   --primary: #2563eb;
   --primary-light: #3b82f6;
   --primary-dark: #1d4ed8;
   --secondary: #7c3aed;
   --accent: #06b6d4;
-  --text-dark: #1e293b;
+  --text-dark: #0c4810;
   --text-medium: #475569;
   --text-light: #64748b;
   --bg-light: #f8fafc;
@@ -52,7 +52,7 @@ body {
   color: var(--text-dark);
   background: radial-gradient(
       800px 400px at -10% -10%,
-      rgba(37, 99, 235, 0.08),
+      rgba(37, 235, 90, 0.08),
       transparent 60%
     ),
     radial-gradient(
