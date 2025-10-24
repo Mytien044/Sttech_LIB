@@ -72,16 +72,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<main>
-    <div id="index"></div>
-<script>
-  fetch('../3rds/3d-flipbook/components/index.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('index').innerHTML = data;
-    })
-    .catch(error => console.error('Lỗi khi tải index:', error));
-</script>
  <!--Main-->
 <div id="main"></div>
 <script>
@@ -92,7 +82,6 @@
     })
     .catch(error => console.error('Lỗi khi tải Main:', error));
 </script>
-</main>
 <!--footer-->
 <div id="footer"></div>
 <script>
