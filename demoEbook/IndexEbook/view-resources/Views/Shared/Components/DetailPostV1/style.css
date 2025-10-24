@@ -5,7 +5,6 @@
 =============================== */
 .hero-section {
   position: relative;
-  height: 100vh;
   overflow: hidden;
   color: white;
   background: radial-gradient(circle at top, #0a0e27, #050617 70%);
@@ -229,13 +228,13 @@
   margin-bottom: 10px;
 }
 
-.color1 { background: #0a821c; }
-.color2 { background: #0345a1; }
-.color3 { background: #804e03; }
-.color4 { background: #ef0e0e; }
-.color5 { background: #fb769e; }
-.color6 { background: #e76e3e; }
-.color7 { background: #1cd8a6; }
+.color1 { background: #16a34a; }
+.color2 { background: #2563eb; }
+.color3 { background: #ca8a04; }
+.color4 { background: #9333ea; }
+.color5 { background: #db2777; }
+.color6 { background: #ea580c; }
+.color7 { background: #4338ca; }
 
 /* ===============================
    MODULES SECTION

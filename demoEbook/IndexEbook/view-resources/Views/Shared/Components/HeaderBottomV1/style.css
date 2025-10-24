@@ -593,14 +593,13 @@ section {
   flex-direction: column;
 }
 
-.module-card:hover {
-  transform: translateY(-8px) scale(1.02);
+.module-card:hover .module-content {
+  transform: translateY(0);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .module-image {
-  position: relative;
-  height: 200px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -631,10 +630,15 @@ section {
 }
 
 .module-content {
-  padding: 24px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    transform: translateY(35%); /* Hide part of the content initially */
+    transition: transform 0.4s ease;
 }
 
 .module-icon {
@@ -674,7 +678,7 @@ section {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--text-dark);
+  color: #fff;
   text-align: center;
   line-height: 1.3;
 }
