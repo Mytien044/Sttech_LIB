@@ -245,7 +245,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/IndexEbook/Designs/Images/img-thuvien.png');
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/demoEbook/IndexEbook/Designs/Images/img-thuvien.png');
     background-position: center;
     background-size: cover;
     background-size: cover;

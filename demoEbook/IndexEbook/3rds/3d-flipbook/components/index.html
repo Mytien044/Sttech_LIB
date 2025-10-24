@@ -1,11 +1,40 @@
- type="importmap">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook - Hệ thống quản lý thư viện sách trực tuyến</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/demoEbook/IndexEbook/3rds/3d-flipbook/css/main.css">
+</head>
+<body>
+        <section id="gioi-thieu" class="hero-section">
+            <div id="threejs-container"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">STTECH - Sáng tạo vì Tương lai số</h1>
+                <p class="hero-subtitle">“Công nghệ không chỉ thay đổi thế giới, mà còn mở ra con đường dẫn tới tri thức và tương lai.”</p>
+                <div class="hero-buttons">
+                    <a href="#phan-he" class="btn btn-gradient">Khám phá giải pháp</a>
+                    <a href="#nguoi-dung" class="btn btn-outline">Về chúng tôi</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+    <script type="importmap">
         {
             "imports": {
                 "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
                 "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
             }
         }
-   	
+    </script>
+    <script type="module">
        import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
@@ -172,4 +201,6 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 });
-    
+    </script>
+</body>
+</html>

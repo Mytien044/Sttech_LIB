@@ -48,228 +48,51 @@
     .catch(error => console.error('Lỗi khi tải HeaderBottom:', error));
 </script>
 <!--HeaderMobile-->
-<header class="mobile-header d-block d-lg-none pt--10 pb-md--10">
-    <div class="container" bis_skin_checked="1">
-        <div class="row align-items-sm-end align-items-center" bis_skin_checked="1">
-            <div class="col-md-4 col-7" bis_skin_checked="1">
-                <a href="/" class="site-brand">
-                    <img src="/demoEbook/IndexEbook/Designs/Images/logo-menu.png" alt="">
-                </a>
-            </div>
-           
-                          </div>
-            <div class="col-md-3 col-5  order-md-3 text-right" bis_skin_checked="1">
-                <div class="mobile-header-btns header-top-widget" bis_skin_checked="1">
-                    <ul class="header-links">
-                        <li class="sin-link">
-                            <a href="javascript:" class="link-icon hamburgur-icon off-canvas-btn">
-                                <i class="ion-navicon"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</header><!--MenuAsideMobile-->
-<aside class="off-canvas-wrapper">
-    <div class="btn-close-off-canvas" bis_skin_checked="1">
-        <i class="ion-android-close"></i>
-    </div>
-    <div class="off-canvas-inner" bis_skin_checked="1">
-        <!-- search box start -->
-        <div class="search-box offcanvas" bis_skin_checked="1">
-            <form>
-                <input type="text" class="input-search" placeholder="Search Here">
-                <button class="icon-search btn-search btn btn-primary ms-2 custom-btn">
-                    <i class="ion-ios-search-strong"></i>
-                </button>
-            </form>
-        </div>
-        <!-- search box end -->
-        <!-- mobile menu start -->
-        <div class="mobile-navigation" bis_skin_checked="1">
-            <!-- mobile menu navigation start -->
-            <nav class="off-canvas-nav">
-                <ul class="mobile-menu main-mobile-menu">
-                            <li>
-                                 <a href="/">Trang chủ</a>
-                                
-                            </li>
-                            <li>
-                                 <a href="/chi-tiet-bai-viet/1">Giới thiệu</a>
-                                
-                            </li>
-                            <li>
-                                 <a href="/ebook">Ebook</a>
-                                
-                            </li>
-                            <li>
-                                 <a href="https://drive.google.com/file/d/13GLhbuMMifNufzxedS5f_t1rM0M99DA7/view?usp=sharing">Hướng dẫn</a>
-                                
-                            </li>
-                            <li>
-                                 <a href="/lien-he-v1">Liên hệ</a>
-                                
-                            </li>
-
-                </ul>
-            </nav>
-            <!-- mobile menu navigation end -->
-        </div>
-    </div>
-</aside>
+<div id="header-Mobile"></div>
+<script>
+  fetch('../3rds/3d-flipbook/components/HeaderMobile.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-Mobile').innerHTML = data;
+    })
+    .catch(error => console.error('Lỗi khi tải HeaderMobile:', error));
+</script>
+<!--MenuAsideMobile-->
+<div id="menuaside-mobile"></div>
+<script>
+  fetch('../3rds/3d-flipbook/components/MenuAsideMobile.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('menuaside-mobile').innerHTML = data;
+    })
+    .catch(error => console.error('Lỗi khi tải MenuAsideMobile:', error));
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <main>
-        <section id="gioi-thieu" class="hero-section">
-            <div id="threejs-container">
-            </div>
-            <div class="container hero-content">
-                <h1 class="hero-title">STTECH - Sáng Tạo Vì Tương Lai Số</h1>
-                <p class="hero-subtitle">“Công nghệ không chỉ thay đổi thế giới, mà còn mở ra con đường <br> dẫn tới tri thức và tương lai.”</p>
-                <div class="hero-buttons">
-                    <a href="#phan-he" class="btn btn-gradient">Khám phá giải pháp</a>
-                    <a href="#nguoi-dung" class="btn btn-outline">Về chúng tôi</a>
-                </div>
-            </div>
-            <div class="hero-overlay"></div>
-        </section>
-
- <section class="about">
-    <div class="container">
-      <div class="about-left">
-        <h2>Chúng tôi là ai ?</h2>
-        <p>Công ty TNHH Đầu tư Công nghệ ST (ST Tech) với phương châm: Chuyển đổi công nghệ - Kiến tạo tương lai.
-ST Tech không ngừng học hỏi, đổi mới công nghệ, nâng cao chất lượng sản phẩm dịch vụ nhằm mang lại lợi ích cao nhất cho khách hàng, cung cấp các sản phẩm và dịch vụ CNTT uy tín, chuyên nghiệp</p>
-        <img src="/demoEbook/IndexEbook/Designs/Images/maybay.jpg" alt="Team">
-      </div>
-      <div class="about-right">
-        <h2>Lợi ích của Thư viện số</h2>
-        <div class="benefits">
-          <div class="benefit"><span>⏰</span><p>Truy cập 24/7</p></div>
-          <div class="benefit"><span>🌐</span><p>Mọi lúc, Mọi nơi</p></div>
-          <div class="benefit"><span>🛡️</span><p>Bảo mật & Bảo tồn</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="solutions">
-    <h2>Giải pháp của Thư viện số</h2>
-    <div class="solution-grid">
-      <div class="solution-card">
-        <h3>Phần mềm Quản lý</h3>
-        <a href="#" class="btn-card">Xem chi tiết</a>
-      </div>
-      <div class="solution-card">
-        <h3>Số hóa Tài liệu</h3>
-        <a href="#" class="btn-card">Xem chi tiết</a>
-      </div>
-      <div class="solution-card">
-        <h3>Tích hợp Hệ thống</h3>
-        <a href="#" class="btn-card">Xem chi tiết</a>
-      </div>
-    </div>
-        
-        <section id="quy-trinh" class="process-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Quy trình sử dụng</h2>
-                    <p class="section-subtitle">7 bước triển khai & vận hành hệ thống Thư viện số.</p>
-                </div>
-                <div class="steps-container">
-                    <div class="steps-row">
-                        <div class="step-card color1"><div class="icon">⚙️</div><div class="number">Bước 1</div><h3>Khởi tạo</h3><p>Nhận hệ thống, cấu hình ban đầu, phân quyền.</p></div>
-                        <div class="step-card color2"><div class="icon">📚</div><div class="number">Bước 2</div><h3>Quản lý tài nguyên</h3><p>Nhập sách in, liên thông dữ liệu.</p></div>
-                        <div class="step-card color3"><div class="icon">💻</div><div class="number">Bước 3</div><h3>Tạo sách số</h3><p>Số hóa tài liệu, tạo ebook, xuất bản.</p></div>
-                        <div class="step-card color4"><div class="icon">👥</div><div class="number">Bước 4</div><h3>Quản lý dịch vụ</h3><p>Cấp tài khoản, mượn–trả, tra cứu.</p></div>
-                    </div>
-                    <div class="steps-row bottom-row">
-                        <div class="step-card color5"><div class="icon">📈</div><div class="number">Bước 5</div><h3>Báo cáo</h3><p>Số liệu nội bộ, biểu mẫu cấp trên.</p></div>
-                        <div class="step-card color6"><div class="icon">✅</div><div class="number">Bước 6</div><h3>Đánh giá chuẩn</h3><p>Tích hợp tiêu chí, tự động chấm điểm.</p></div>
-                        <div class="step-card color7"><div class="icon">🚀</div><div class="number">Bước 7</div><h3>Phát triển mở rộng</h3><p>Phân tích dữ liệu, kết nối hệ sinh thái.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="phan-he" class="modules-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">3 phân hệ chính</h2>
-                    <p class="section-subtitle">Hệ thống toàn diện đáp ứng mọi nhu cầu quản lý thư viện.</p>
-                </div>
-                <div class="modules-grid">
-                    <div class="module-card">
-                        <div class="module-image"><img src="/demoEbook/IndexEbook/Designs/Images/QLTVTT.jpg" alt="Quản lý thư viện"></div>
-                        <div class="module-content">
-                            <div class="module-icon"><i class="fa-solid fa-school"></i></div>
-                            <h3 class="module-title">Quản lý thư viện trường học</h3>
-                            <p>Nghiệp vụ thư viện học đường: bạn đọc, kho sách, mượn trả, thống kê.</p>
-                            <div class="module-tags"><span class="tag">Bạn đọc</span><span class="tag">Mượn trả</span><span class="tag">Báo cáo</span></div>
-                        </div>
-                    </div>
-                    <div class="module-card">
-                        <div class="module-image"><img src="/demoEbook/IndexEbook/Designs/Images/sachso.jpg" alt="EBOOK"></div>
-                        <div class="module-content">
-                            <div class="module-icon"><i class="fa-solid fa-book-open-reader"></i></div>
-                            <h3 class="module-title">Thư viện số EBOOK</h3>
-                            <p>Kho tài nguyên số theo chuẩn, đọc trực tuyến, phân quyền truy cập.</p>
-                            <div class="module-tags"><span class="tag">Đọc Online</span><span class="tag">Phân quyền</span><span class="tag">Tài nguyên số</span></div>
-                        </div>
-                    </div>
-                    <div class="module-card">
-                        <div class="module-image"><img src="/demoEbook/IndexEbook/Designs/Images/TVDC.jpg" alt="Thư viện đạt chuẩn"></div>
-                        <div class="module-content">
-                            <div class="module-icon"><i class="fa-solid fa-award"></i></div>
-                            <h3 class="module-title">Thư viện đạt chuẩn</h3>
-                            <p>Bộ tiêu chí – minh chứng – báo cáo hỗ trợ đánh giá, xếp hạng.</p>
-                            <div class="module-tags"><span class="tag">Tiêu chí</span><span class="tag">Minh chứng</span><span class="tag">Xếp hạng</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="nguoi-dung" class="users-section">
-            <div class="container">
-                 <div class="section-header">
-                    <h2 class="section-title">Lợi ích theo nhóm người dùng</h2>
-                    <p class="section-subtitle">Mỗi đối tượng đều nhận được giá trị riêng từ hệ thống.</p>
-                </div>
-                <div class="users-grid">
-                    <div class="user-card">
-                        <div class="user-avatar"><img src="/demoEbook/IndexEbook/Designs/Images/CTXH.png" alt="Sở GD&ĐT"><div class="user-badge"><i class="fa-solid fa-building-columns"></i></div></div>
-                        <div class="user-info"><h3>Sở/Phòng GD</h3><p>Quản lý tập trung, tổng hợp báo cáo liên trường, theo dõi chất lượng.</p></div>
-                    </div>
-                    <div class="user-card">
-                        <div class="user-avatar"><img src="/demoEbook/IndexEbook/Designs/Images/HT.png" alt="Hiệu trưởng"><div class="user-badge"><i class="fa-solid fa-user-tie"></i></div></div>
-                        <div class="user-info"><h3>Hiệu trưởng</h3><p>Nắm bắt tình hình, ra quyết định dựa trên dữ liệu, phân tích xu hướng.</p></div>
-                    </div>
-                    <div class="user-card">
-                        <div class="user-avatar"><img src="/demoEbook/IndexEbook/Designs/Images/COGIAO.jpg" alt="Giáo viên"><div class="user-badge"><i class="fa-solid fa-user-gear"></i></div></div>
-                        <div class="user-info"><h3>Giáo viên/Thủ thư</h3><p>Giảm việc thủ công, xử lý nhanh mượn/trả, biên mục hiệu quả.</p></div>
-                    </div>
-                    <div class="user-card">
-                        <div class="user-avatar"><img src="/demoEbook/IndexEbook/Designs/Images/HOCSINH.png" alt="Học sinh"><div class="user-badge"><i class="fa-solid fa-user-graduate"></i></div></div>
-                        <div class="user-info"><h3>Học sinh/Bạn đọc</h3><p>Tra cứu tiện lợi, tiếp cận EBOOK, hình thành thói quen đọc sách.</p></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="lien-he" class="cta-section">
-            <div class="container">
-                <h2 class="cta-title">Sẵn sàng nâng tầm thư viện của bạn?</h2>
-                <p class="cta-subtitle">Liên hệ ngay để nhận tư vấn và bản dùng thử miễn phí từ ST Tech.</p>
-                <a href="#" class="btn btn-light">Đăng ký tư vấn</a>
-            </div>
-        </section>
-    </main>
+<main>
+    <div id="index"></div>
+<script>
+  fetch('../3rds/3d-flipbook/components/index.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('index').innerHTML = data;
+    })
+    .catch(error => console.error('Lỗi khi tải index:', error));
+</script>
+ <!--Main-->
+<div id="main"></div>
+<script>
+  fetch('../3rds/3d-flipbook/components/Main.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('main').innerHTML = data;
+    })
+    .catch(error => console.error('Lỗi khi tải Main:', error));
+</script>
+</main>
 <!--footer-->
 <div id="footer"></div>
 <script>
@@ -288,7 +111,6 @@ ST Tech không ngừng học hỏi, đổi mới công nghệ, nâng cao chất 
 <script abp-src="/demoEbook/IndexEbook/view-resources/Views/_Bundles/common-scripts.js"></script>
 <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
 <script src="/AbpScripts/GetScripts?_v=638966551497300744" type="text/javascript"></script>
-
 <script src="/demoEbook/IndexEbook/3rds/3d-flipbook/js/flipbook.min.js" type="text/javascript"></script>
 
 
@@ -319,14 +141,7 @@ ST Tech không ngừng học hỏi, đổi mới công nghệ, nâng cao chất 
     });
     
 </script>
- <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
+
    
 
 </body></html>
