@@ -107,6 +107,7 @@
   font-size: 28px;
   margin-bottom: 16px;
   font-weight: bold;
+ 
 }
 
 .about p {
@@ -119,6 +120,7 @@
 .about img {
   width: 100%;
   border-radius: 12px;
+  height:auto
 }
 
 .benefits {
@@ -367,7 +369,7 @@
    CTA SECTION
 =============================== */
 .cta-section {
-  background: linear-gradient(90deg, #0a0e27, #1a1f3d);
+  background: linear-gradient(90deg, #097735, #1a1f3d);
   color: white;
   text-align: center;
   padding: 100px 20px;
