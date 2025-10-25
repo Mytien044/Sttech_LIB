@@ -12,7 +12,7 @@
   --primary-dark: #1d4ed8;
   --secondary: #7c3aed;
   --accent: #06b6d4;
-  --text-dark: #0c4810;
+  --text-dark: #080908;
   --text-medium: #475569;
   --text-light: #64748b;
   --bg-light: #f8fafc;
@@ -637,8 +637,6 @@ section {
     padding: 1.5rem;
     color: #fff;
     background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-    transform: translateY(35%); /* Hide part of the content initially */
-    transition: transform 0.4s ease;
 }
 
 .module-icon {
@@ -774,7 +772,7 @@ section {
 
 .user-avatar {
   position: relative;
-  height: 120px;
+  height: 200px;
   overflow: hidden;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
@@ -1506,7 +1504,7 @@ nav {
     }
 
 footer {
-    background: linear-gradient(180deg, #0f172a, #0b1220);
+    background: linear-gradient(180deg, #045427, #0b1220);
     color: white;
     padding: 60px 0 20px;
 }

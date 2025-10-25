@@ -27,7 +27,6 @@ input, textarea, select, button {
 
     .contact-card h2, .info-card h3 {
         font-family: var(--serif-font);
-        color: var(--primary-color);
         margin-bottom: 12px
     }
 

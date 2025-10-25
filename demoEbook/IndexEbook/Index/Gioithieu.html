@@ -51,9 +51,7 @@
 <script>
   fetch('../3rds/3d-flipbook/components/HeaderContact.html')
     .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-Contact').innerHTML = data;
-    })
+    .then(data => {document.getElementById('header-Contact').innerHTML = data;})
     .catch(error => console.error('Lỗi khi tải HeaderContact:', error));
 </script>
 <!--HeaderMobile-->

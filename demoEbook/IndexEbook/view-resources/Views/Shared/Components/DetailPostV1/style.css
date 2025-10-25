@@ -327,10 +327,10 @@
 .user-card {
   background: #f8f9fc;
   border-radius: 16px;
-  padding: 30px 20px;
   text-align: center;
   transition: 0.3s;
   position: relative;
+  min-height: 320px;
 }
 
 .user-card:hover {
@@ -345,7 +345,7 @@
 
 .user-avatar img {
   width: 80px;
-  border-radius: 50%;
+  height: 80px;
   margin-bottom: 15px;
 }
 
@@ -369,7 +369,7 @@
    CTA SECTION
 =============================== */
 .cta-section {
-  background: linear-gradient(90deg, #097735, #1a1f3d);
+  background: linear-gradient(90deg, #055726, #055726);
   color: white;
   text-align: center;
   padding: 100px 20px;
