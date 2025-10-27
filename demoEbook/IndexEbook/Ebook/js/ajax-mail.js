@@ -151,3 +151,7 @@ Author: Siddharth Doshi
         return this
     }
 })(jQuery);
+// Danh mục tài liệu số
+$(".accordion-header").click(function() {
+  $(this).parent().toggleClass("active");
+});

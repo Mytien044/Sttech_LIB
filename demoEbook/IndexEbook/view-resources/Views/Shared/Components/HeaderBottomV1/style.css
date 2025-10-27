@@ -1426,7 +1426,7 @@ nav {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 20px;
-    font-family: var(--serif-font);
+    font-family: "Inter", sans-serif;
 }
 
 .footer-section p {

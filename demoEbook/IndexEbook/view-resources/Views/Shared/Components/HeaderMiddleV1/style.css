@@ -40,12 +40,12 @@ ul {
 }
 
 .btn {
-    display: inline-block;
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+
 }
 
 .btn-primary {
@@ -246,7 +246,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/demoEbook/IndexEbook/Designs/Images/img-thuvien.png');
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('/demoEbook/IndexEbook/Designs/Images/banner.png');
     background-position: center;
     background-size: cover;
     background-size: cover;

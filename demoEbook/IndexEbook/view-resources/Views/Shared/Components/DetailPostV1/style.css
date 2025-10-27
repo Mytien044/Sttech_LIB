@@ -297,7 +297,8 @@
 
 .module-tags {
   margin-top: 15px;
-  
+  display: block;       /* quan trọng: để margin auto hoạt động */
+  margin: 20px auto 0; 
 }
 
 .tag {
@@ -396,6 +397,9 @@
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  width: 20%;   
+  margin: 20px auto 0;
+  text-align: center; 
 }
 
 .btn-light:hover {
