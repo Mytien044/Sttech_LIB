@@ -1,5 +1,14 @@
 
-
+:root {
+    --primary-green: #1DB954;
+    --dark-green: #1E8449;
+    --light-green-bg: #E8F5E9;
+    --dark-text: #222;
+    --body-text: #555;
+    --white-bg: #FFFFFF;
+    --section-bg: #F9FAFB;
+    --border-color: #E7E7E7;
+}
 /* ===============================
    HERO SECTION
 =============================== */
@@ -96,19 +105,26 @@
 
 .about .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 30px;
 }
+
 .about-right h2{
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+.about-intro-content
+{
+  position: relative;
+  padding-left: 20px;
+  border-left: 4px solid #1DB954;
+}
 .about h2 {
-  color: #0a0e27;
-  font-size: 28px;
+  color: var(--dark-green);
+  font-size: 50px;
   margin-bottom: 16px;
   font-weight: bold;
- 
 }
 
 .about p {
@@ -121,9 +137,103 @@
 .about img {
   width: 100%;
   border-radius: 12px;
-  height:auto
+  height:auto;
+  border: 1px solid #1DB954;
 }
+    /* === CỘT BÊN PHẢI (TÍNH NĂNG) === */
+    .about-feature-area h3 {
+        font-size: 2.0rem;
+        font-weight: 600;
+        color: var(--dark-text);
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .about-feature-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Lưới 2 cột */
+        gap: 30px; /* Khoảng cách giữa các thẻ */
+    }
+
+    .about-feature-card {
+        background: var(--white-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        padding: 25px;
+        display: flex; /* Dùng flex để xếp icon và text */
+        align-items: flex-start; /* Căn icon và text theo lề trên */
+        gap: 20px;
+        transition: all 0.3s ease;
+        position: relative; /* Để tạo hiệu ứng gradient border */
+        overflow: hidden; /* Ẩn phần thừa của gradient */
+    }
+
+    /* Hiệu ứng khi di chuột */
+    .about-feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(29, 185, 84, 0.15); /* Đổ bóng màu xanh lá */
+        border-color: transparent; /* Ẩn border gốc để khoe gradient */
+    }
+
+    /* Lớp phủ Gradient (chỉ hiện khi hover) */
+    .about-feature-card::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        border-radius: 12px;
+        border: 2px solid transparent;
+        background: linear-gradient(135deg, var(--primary-green), var(--dark-green)) border-box;
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) padding-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .about-feature-card:hover::before {
+        opacity: 1; /* Hiện gradient border khi hover */
+    }
+
+    /* Icon */
+    .about-feature-icon {
+        font-size: 2rem;
+        color: var(--dark-green);
+        background-color: var(--light-green-bg);
+        border-radius: 8px;
+        width: 55px;
+        height: 55px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0; /* Không co icon */
+    }
+    .about-feature-icon img{
+        width: 35px;
+        height: 40px;
+        border: none;
+    }
+
+    /* Khối nội dung (Tiêu đề + Mô tả) */
+    .about-card-content h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--dark-text);
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    .about-card-content p {
+        font-size: 0.95rem;
+        color: var(--body-text);
+        margin: 0;
+        line-height: 1.5;
+    }
 .benefits {
   display: flex;
   gap: 20px;
@@ -299,6 +409,7 @@
   margin-top: 15px;
   display: block;       /* quan trọng: để margin auto hoạt động */
   margin: 20px auto 0; 
+  text-align: center;
 }
 
 .tag {
